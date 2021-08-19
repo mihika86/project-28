@@ -11,15 +11,13 @@ class Stone
 		this.x=x;
 		this.y=y;
 		this.r=r
-		this.image=loadImage("images/stone.png");
+		this.image=loadImage("stone.png");
 		this.body=Bodies.circle(this.x, this.y, this.r/2, options)
 		World.add(world, this.body);
 
 	}
 
-	fly() {
-		 this.launcher.body = null
-	}
+	
 	display(){
 		
 			var stonepos=this.body.position;		
